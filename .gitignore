@@ -1,0 +1,31 @@
+# 1. Local Python Environment
+# You never upload the virtual environment because it contains thousands of 
+# files specific to your operating system. Other developers will install 
+# their own using your requirements.txt.
+venv/
+__pycache__/
+*.pyc
+
+# 2. Raw Data and Datasets
+# Datasets should not be version-controlled. The ml-1m dataset and the 
+# zip file are too large and should remain local.
+data/
+*.dat
+*.zip
+
+# 3. Trained Model Weights
+# The serialized pickle files (svd_model.pkl, cosine_sim.pkl, etc.) can be 
+# quite large. Since you have the train_model.py script, anyone can regenerate 
+# these files themselves. 
+models/
+*.pkl
+*.joblib
+
+# 4. Jupyter Notebook Checkpoints
+# Jupyter creates hidden auto-save files that clutter the repository.
+.ipynb_checkpoints/
+
+# 5. Environment Variables
+# If you ever add API keys or database passwords later, they go in a .env file.
+# This prevents you from accidentally leaking secrets to the public.
+.env

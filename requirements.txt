@@ -1,0 +1,11 @@
+# Data Processing & Math
+pandas
+numpy
+
+# Machine Learning & Recommendation
+scikit-learn
+scikit-surprise
+
+# API Backend Framework
+fastapi
+uvicorn
